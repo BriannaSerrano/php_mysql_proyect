@@ -21,7 +21,7 @@
             <input type="text" name="titulo" class="form-control" placeholder="Titulo de Tarea" autofocus>
           </div>
           <div class="form-group">
-            <textarea name="descripción" rows="2" class="form-control" placeholder="Descripción de Tarea"></textarea>
+            <textarea name="descripcion" rows="2" class="form-control" placeholder="Descripcion de Tarea"></textarea>
           </div>
           <input type="submit" name="save_task" class="btn btn-success btn-block" value="Guardar Tarea">
         </form>
@@ -46,7 +46,7 @@
           while($row = mysqli_fetch_assoc($result_tasks)) { ?>
           <tr>
             <td><?php echo $row['titulo']; ?></td>
-            <td><?php echo $row['descripción']; ?></td>
+            <td><?php echo $row['descripcion']; ?></td>
             <td><?php echo $row['creado_en']; ?></td>
             <td>
               <a href="edit.php?id=<?php echo $row['id']?>" class="btn btn-secondary">

@@ -11,7 +11,7 @@ if(isset($_GET['id'])) {
   }
 
   $_SESSION['message'] = 'Tarea Eliminada con exito';
-  $_SESSION['message_type'] = 'Cuidado';
+  $_SESSION['message_type'] = 'danger';
   header('Location: index.php');
 }
 
